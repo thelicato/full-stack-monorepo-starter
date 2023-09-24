@@ -1,0 +1,10 @@
+{
+  "name": "full-stack-monorepo-starter",
+  "version": "0.0.0",
+  "description": "A full-stack monorepo starter project",
+  "scripts": {
+    "dev": "pnpm --parallel --stream -r dev"
+  },
+  "author": "Angelo Delicato",
+  "license": "MIT"
+}

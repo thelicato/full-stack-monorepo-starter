@@ -1,0 +1,30 @@
+{
+  "name": "@full-stack-monorepo-starter/bff",
+  "version": "0.0.0",
+  "author": "thelicato <thelicato@duck.com>",
+  "exports": {
+    ".": {
+      "import": "./dist/mjs/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./*.js": "./*.js",
+    "./*": {
+      "require": "./*.js",
+      "import": "./*"
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/mjs/index.js",
+  "scripts": {
+    "build-mjs": "tsc -p tsconfig.mjs.json",
+    "build-cjs": "tsc -p tsconfig.cjs.json",
+    "build": "pnpm build-mjs && pnpm build-cjs",
+    "prepare": "pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.1",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.5",
+    "typescript": "^5.0.4"
+  }
+}
