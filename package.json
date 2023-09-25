@@ -5,6 +5,5 @@
   "scripts": {
     "dev": "pnpm --parallel --stream -r dev"
   },
-  "author": "Angelo Delicato",
-  "license": "MIT"
+  "author": "thelicato <thelicato@duck.com>"
 }

@@ -4,4 +4,4 @@ export interface GuessAgeReq {
 
 export interface GuessAgeRes {
   guessedValue: number;
-}
+} 
